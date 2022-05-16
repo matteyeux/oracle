@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "oracle"
+version = "0.1.0"
+description = "oracle API"
+authors = ["matteyeux"]
+
+[tool.poetry.dependencies]
+python = "^3.7.1"
+uvicorn = "^0.14.0"
+fastapi = "^0.65.2"
+pyusb = "^1.2.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+oracle = "oracle.main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
